@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทที่ 1 : เนื้อหาเพิ่มเติม</title>
+  <link rel="icon" href="SchoolLogo.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(120deg, #e3f2ff, #fff1f8, #f5faff);
+      background-size: 200% 200%;
+      animation: bgShift 10s ease infinite;
+      color: #1d1d1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px) saturate(180%);
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(31, 38, 135, 0.15);
+      width: 90%;
+      max-width: 1100px;
+      margin-top: 60px;
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: #111;
+    }
+
+    .pdf-container {
+      width: 100%;
+      height: 650px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin-bottom: 80px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 🔹 ปุ่มหลักและแบบทดสอบ */
+    .main-buttons, .test-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    a.button {
+      text-decoration: none;
+      background: #0071e3;
+      color: white;
+      padding: 18px 42px;
+      border-radius: 16px;
+      transition: 0.3s ease;
+      font-weight: 500;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      min-width: 230px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    a.button:hover {
+      background: #005bb5;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.4rem;
+      color: #0071e3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glass">
+    <h1>บทที่ 1 : เนื้อหาเพิ่มเติม</h1>
+
+    <div class="pdf-container">
+      <iframe src="บทเรียนที่ 1บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น.pdf"></iframe>
+    </div>
+
+    <!-- 🔹 ปุ่มหลัก (เรียงใหม่ตามที่ต้องการ) -->
+    <div class="main-buttons">
+      <a href="chapter1.html" class="button">← กลับหน้าบทที่ 1</a>
+      <a href="index.html" class="button">🏠 กลับหน้าหลัก</a>
+      <a href="chapter2.html" class="button">บทถัดไป ➜</a>
+    </div>
+
+    <h2>📘 แบบทดสอบและแบบฝึกหัด</h2>
+
+    <!-- 🔹 ปุ่มแบบทดสอบ -->
+    <div class="test-buttons">
+      <a href="https://forms.gle/aXVE3XsuJvCdbcdq5" target="_blank" class="button">📝 แบบทดสอบก่อนเรียน</a>
+      <a href="https://forms.gle/LoDRwHn7eUH6HJ1VA" target="_blank" class="button">🧠 แบบทดสอบหลังเรียน</a>
+      <a href="https://forms.gle/XQPUsfJTjqnvMLMdA" target="_blank" class="button">💪 แบบฝึกหัดท้ายบท</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 จัดทำโดย นางสาว ศรนี บุญประกอบ
+  </footer>
+</body>
+</html>
