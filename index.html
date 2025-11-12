@@ -54,9 +54,12 @@
     }
 
     .logo {
-      width: 60px;
-      opacity: 0.8;
-      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
     /* เนื้อหา */
@@ -97,6 +100,32 @@
       padding-left: 0;
     }
 
+    /* 🔹 เพิ่มสไตล์ลิงก์หน่วยการเรียนรู้ */
+    .chapter-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .chapter-links a {
+      display: block;
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      border-radius: 14px;
+      padding: 12px;
+      font-weight: 500;
+      color: #0071e3;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: 0.25s ease;
+    }
+
+    .chapter-links a:hover {
+      background: #0071e3;
+      color: white;
+      transform: translateY(-3px);
+    }
+
     /* ส่วนท้าย */
     footer {
       text-align: center;
@@ -110,7 +139,7 @@
 </head>
 <body>
   <header class="glass">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo" class="logo">
+    <img src="images\SchoolLogo.png" alt="Logo" class="logo">
     <h1>โครงงานรายวิชา การเขียนโปรแกรมเชิงวัตถุเบื้องต้น</h1>
     <h2>รหัสวิชา 21910-2011</h2>
   </header>
@@ -127,29 +156,47 @@
 
     <section>
       <h3>รายละเอียดโครงงาน</h3>
-      <p><strong>ชื่อโครงงาน:</strong> ระบบเว็บไซต์แสดงข้อมูลนักศึกษา</p>
+      <p><strong>ชื่อโครงงาน:</strong> ระบบเว็บไซต์และหน่วยการเรียนรู้ของแต่ละบท</p>
       <p><strong>วัตถุประสงค์:</strong> เพื่อฝึกใช้ภาษา HTML, CSS และหลักการ OOP ในการพัฒนาเว็บไซต์ที่มีโครงสร้างและการออกแบบสวยงาม</p>
+    </section>
+
+    <section>
+      <h3>หน่วยการเรียนรู้ (12 บท)</h3>
+      <div class="chapter-links">
+        <a href="chapter1.html" target="_blank">บทที่ 1 : แนะนำการเขียนโปรแกรมเชิงวัตถุ</a>
+        <a href="chapter2.html" target="_blank">บทที่ 2 : คลาสและออบเจ็กต์</a>
+        <a href="chapter3.html" target="_blank">บทที่ 3 : คุณสมบัติ (Attributes)</a>
+        <a href="chapter4.html" target="_blank">บทที่ 4 : เมธอด (Methods)</a>
+        <a href="chapter5.html" target="_blank">บทที่ 5 : การห่อหุ้ม (Encapsulation)</a>
+        <a href="chapter6.html" target="_blank">บทที่ 6 : การสืบทอด (Inheritance)</a>
+        <a href="chapter7.html" target="_blank">บทที่ 7 : พอลิมอร์ฟิซึม (Polymorphism)</a>
+        <a href="chapter8.html" target="_blank">บทที่ 8 : คอนสตรักเตอร์และดีสตรักเตอร์</a>
+        <a href="chapter9.html" target="_blank">บทที่ 9 : การจัดการข้อผิดพลาด (Exception Handling)</a>
+        <a href="chapter10.html" target="_blank">บทที่ 10 : การใช้ไฟล์ในโปรแกรม</a>
+        <a href="chapter11.html" target="_blank">บทที่ 11 : การสร้างโปรเจกต์ OOP ขนาดเล็ก</a>
+        <a href="chapter12.html" target="_blank">บทที่ 12 : สรุปและนำเสนอผลงาน</a>
+      </div>
     </section>
 
     <section>
       <h3>ผู้จัดทำ</h3>
       <ul>
-        <li>นาย [ชื่อ-นามสกุล]</li>
-        <li>รหัสนักศึกษา: [รหัส]</li>
-        <li>แผนกวิชา: เทคโนโลยีสารสนเทศ</li>
-        <li>วิทยาลัยเทคนิค [ชื่อวิทยาลัย]</li>
+        <li>นางสาว ศรนรี บุญประกอบ</li>
+        <li>รหัสนักศึกษา: [66202040035]</li>
+        <li>แผนกวิชา: เทคโนโลยีธุรกิจดิจิทัล</li>
+        <li>วิทยาลัยการอาชีพสระบุรี</li>
       </ul>
     </section>
 
     <section>
       <h3>ติดต่อ</h3>
-      <p>📧 Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+      <p>📧 Email: <a href="mailto:66202040035@sic.ac.th">66202040035@sic.ac.th</a></p>
       <p>🌐 GitHub: <a href="https://github.com/sonnari310124" target="_blank">sonnari310124</a></p>
     </section>
   </main>
 
   <footer class="glass">
-    <p>© 2025 Sonnari | วิทยาลัยเทคนิค...</p>
+    <p>© 2025 จัดทําโดย นางสาว ศรนรี บุญประกอบ</p>
   </footer>
 </body>
 </html>
