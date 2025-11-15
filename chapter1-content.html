@@ -27,6 +27,7 @@
       100% { background-position: 0% 50%; }
     }
 
+    /* ------------------- CONTENT FADE IN ------------------- */
     .glass {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(20px) saturate(180%);
@@ -37,6 +38,15 @@
       margin-top: 60px;
       padding: 60px 50px;
       text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: contentFade 1.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes contentFade {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
@@ -45,6 +55,7 @@
       color: #111;
     }
 
+    /* โลโก้ข้าง H1 */
     .h1-logo {
       display: inline-block;
       vertical-align: middle;
@@ -77,6 +88,7 @@
       border: none;
     }
 
+    /* 🔹 ปุ่มหลักและแบบทดสอบ */
     .main-buttons, .test-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -131,6 +143,7 @@
       <iframe src="images\บทเรียนที่ 1บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น.pdf"></iframe>
     </div>
 
+    <!-- 🔹 ปุ่มหลัก -->
     <div class="main-buttons">
       <a href="chapter1.html" class="button">← กลับหน้าบทที่ 1</a>
       <a href="index.html" class="button">🏠 กลับหน้าหลัก</a>
@@ -139,6 +152,7 @@
 
     <h2>📘 แบบทดสอบและแบบฝึกหัด</h2>
 
+    <!-- 🔹 ปุ่มแบบทดสอบ -->
     <div class="test-buttons">
       <a href="https://forms.gle/aXVE3XsuJvCdbcdq5" target="_blank" class="button">📝 แบบทดสอบก่อนเรียน</a>
       <a href="https://forms.gle/LoDRwHn7eUH6HJ1VA" target="_blank" class="button">🧠 แบบทดสอบหลังเรียน</a>
