@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>บทที่ 1 : บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น</title>
-  <link rel="icon" href="images\SchoolLogo.png" type="image/png">
+  <link rel="icon" href="images/SchoolLogo.png" type="image/png">
 
   <style>
     body {
@@ -75,10 +75,28 @@
       overflow: hidden;
     }
 
+    /* ------------------- H1 + LOGO ------------------- */
     h1 {
       text-align: center;
       color: #000000;
       margin-bottom: 30px;
+    }
+
+    .h1-logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    .h1-logo:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.4);
     }
 
     /* ------------------- PDF CONTAINER ------------------- */
@@ -104,31 +122,7 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
 
-    /* ------------------- COLLEGE LOGO ON PDF ------------------- */
-    .pdf-logo {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 60px;
-      height: 60px;
-      cursor: pointer;
-    }
-
-    .pdf-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.2);
-      border-radius: 8px;
-    }
-
-    .pdf-logo:hover img {
-      transform: scale(1.2);
-      box-shadow: 0 0 25px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.4);
-    }
-
-    /* ------------------- NAV BUTTON ------------------- */
+    /* ------------------- NAV BUTTONS ------------------- */
     .nav-buttons {
       display: flex;
       justify-content: space-between; /* ปุ่มซ้าย-ขวา */
@@ -156,7 +150,6 @@
       color: #666;
       font-size: 0.9em;
       margin: 50px auto 30px;
-
     }
 
   </style>
@@ -166,25 +159,25 @@
   <!-- ------------------- INTRO TEXT + LOGO ------------------- -->
   <div class="intro-text">
     บทที่ 1 : บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น
-    <img src="images\SchoolLogo.png" alt="Logo" class="intro-logo">
+    <img src="images/SchoolLogo.png" alt="Logo" class="intro-logo">
   </div>
 
   <!-- ------------------- MAIN CONTENT ------------------- -->
   <div class="content">
     <div class="glass">
-      <h1>บทที่ 1 : บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น</h1>
+      <h1>
+        บทที่ 1 : บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น
+        <img src="images/SchoolLogo.png" alt="Logo" class="h1-logo">
+      </h1>
 
       <!-- PDF VIEWER -->
       <div class="pdf-wrapper">
         <iframe src="images/Project1.pdf"></iframe>
-        <div class="pdf-logo">
-          <img src="images\SchoolLogo.png" alt="Logo">
-        </div>
       </div>
 
       <!-- NAV BUTTONS -->
       <div class="nav-buttons">
-        <a href="index.html" class="button">🏠 กลับหน้าหลัก</a>
+        <a href="chapter1.html" class="button">🏠 ย้อนกลับบทก่อนหน้า</a>
         <a href="chapter1-content.html" class="button">📘 เข้าสู่เนื้อหาต่อไป</a>
       </div>
     </div>
@@ -196,4 +189,3 @@
 
 </body>
 </html>
-
