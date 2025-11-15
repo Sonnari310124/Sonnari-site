@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>บทที่ 1 : การเขียนโปรแกรมเชิงวัตถุเบื้องต้น</title>
-  <link rel="icon" href="SchoolLogo.png" type="image/png">
+  <link rel="icon" href="images/SchoolLogo.png" type="image/png">
 
   <style>
     body {
@@ -45,6 +45,23 @@
       color: #111;
     }
 
+    .h1-logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+
+    .h1-logo:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.4);
+    }
+
     .pdf-container {
       width: 100%;
       height: 650px;
@@ -60,7 +77,6 @@
       border: none;
     }
 
-    /* 🔹 ปุ่มหลักและแบบทดสอบ */
     .main-buttons, .test-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -106,13 +122,15 @@
 
 <body>
   <div class="glass">
-    <h1>บทที่ 1 : การเขียนโปรแกรมเชิงวัตถุเบื้องต้น</h1>
+    <h1>
+      บทที่ 1 : การเขียนโปรแกรมเชิงวัตถุเบื้องต้น
+      <img src="images/SchoolLogo.png" alt="Logo" class="h1-logo">
+    </h1>
 
     <div class="pdf-container">
       <iframe src="images\บทเรียนที่ 1บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น.pdf"></iframe>
     </div>
 
-    <!-- 🔹 ปุ่มหลัก (เรียงใหม่ตามที่ต้องการ) -->
     <div class="main-buttons">
       <a href="chapter1.html" class="button">← กลับหน้าบทที่ 1</a>
       <a href="index.html" class="button">🏠 กลับหน้าหลัก</a>
@@ -121,11 +139,10 @@
 
     <h2>📘 แบบทดสอบและแบบฝึกหัด</h2>
 
-    <!-- 🔹 ปุ่มแบบทดสอบ -->
     <div class="test-buttons">
       <a href="https://forms.gle/aXVE3XsuJvCdbcdq5" target="_blank" class="button">📝 แบบทดสอบก่อนเรียน</a>
       <a href="https://forms.gle/LoDRwHn7eUH6HJ1VA" target="_blank" class="button">🧠 แบบทดสอบหลังเรียน</a>
-      <a href="https://forms.gle/XQPUsfJTjqnvMLMdA  " target="_blank" class="button">💪 แบบฝึกหัดท้ายบท</a>
+      <a href="https://forms.gle/XQPUsfJTjqnvMLMdA" target="_blank" class="button">💪 แบบฝึกหัดท้ายบท</a>
     </div>
   </div>
 
@@ -134,4 +151,3 @@
   </footer>
 </body>
 </html>
-
