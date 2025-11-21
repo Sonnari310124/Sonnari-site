@@ -41,6 +41,7 @@
       margin: 20px auto 0;
       width: 80px;
       height: auto;
+      border-radius: 50%; /* โค้ดที่แก้ไข: ทำให้โลโก้ในหน้าแนะนำเป็นวงกลม */
     }
 
     @keyframes introFade {
@@ -91,7 +92,7 @@
       cursor: pointer;
       transition: transform 0.3s, box-shadow 0.3s;
       box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.2);
-      border-radius: 8px;
+      border-radius: 50%; /* โค้ดที่แก้ไข: ทำให้โลโก้ในส่วนหัวเป็นวงกลม */
     }
 
     .h1-logo:hover {
@@ -151,13 +152,11 @@
 </head>
 <body>
 
-  <!-- ------------------- INTRO TEXT + LOGO ------------------- -->
   <div class="intro-text">
     บทที่ 1 : บทบาทของโปรแกรมเชิงวัตถุเบื้องต้น
     <img src="images/SchoolLogo.png" alt="Logo" class="intro-logo">
   </div>
 
-  <!-- ------------------- MAIN CONTENT ------------------- -->
   <div class="content">
     <div class="glass">
       <h1>
@@ -165,12 +164,10 @@
         <img src="images/SchoolLogo.png" alt="Logo" class="h1-logo">
       </h1>
 
-      <!-- PDF VIEWER -->
       <div class="pdf-wrapper">
         <iframe src="images/Project1.pdf"></iframe>
       </div>
 
-      <!-- NAV BUTTONS -->
       <div class="nav-buttons">
         <a href="index.html" class="button">🏠 ย้อนกลับหน้าหลัก</a>
         <a href="chapter1-content.html" class="button">📘 เข้าสู่เนื้อหาต่อไป</a>
