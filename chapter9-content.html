@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทเรียนที่ 9 : คำสั่ง for loop</title>
+  <link rel="icon" href="images/SchoolLogo.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(120deg, #e3f2ff, #fff1f8, #f5faff);
+      background-size: 200% 200%;
+      animation: bgShift 10s ease infinite;
+      color: #1d1d1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ------------------- CONTENT FADE IN ------------------- */
+    .glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px) saturate(180%);
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(31, 38, 135, 0.15);
+      width: 90%;
+      max-width: 1100px;
+      margin-top: 60px;
+      padding: 60px 50px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: contentFade 1.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    @keyframes contentFade {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: #111;
+    }
+
+    /* โลโก้ข้าง H1 */
+    .h1-logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.2);
+      border-radius: 50%; /* โค้ดที่แก้ไข: ทำให้โลโก้ในส่วนหัวเป็นวงกลม */
+    }
+
+    .h1-logo:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.4);
+    }
+
+    .pdf-container {
+      width: 100%;
+      height: 650px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin-bottom: 80px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 🔹 ปุ่มหลักและแบบทดสอบ */
+    .main-buttons, .test-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    a.button {
+      text-decoration: none;
+      background: #0071e3;
+      color: white;
+      padding: 18px 42px;
+      border-radius: 16px;
+      transition: 0.3s ease;
+      font-weight: 500;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      min-width: 230px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    a.button:hover {
+      background: #005bb5;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.4rem;
+      color: #0071e3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glass">
+    <h1>
+      บทเรียนที่ 9 : คำสั่ง for loop
+      <img src="images/SchoolLogo.png" alt="Logo" class="h1-logo">
+    </h1>
+
+    <div class="pdf-container">
+      <iframe src="images\บทเรียนที่ 9 คำสั่ง for loop.pdf"></iframe>
+    </div>
+
+    <!-- 🔹 ปุ่มหลัก -->
+    <div class="main-buttons">
+      <a href="chapter9.html" class="button">← กลับหน้าบทที่ 9</a>
+      <a href="index.html" class="button">🏠 กลับหน้าหลัก</a>
+      <a href="chapter10.html" class="button">บทถัดไป ➜</a>
+    </div>
+
+    <h2>📘 แบบทดสอบและแบบฝึกหัด</h2>
+
+    <!-- 🔹 ปุ่มแบบทดสอบ -->
+    <div class="test-buttons">
+      <a href="https://forms.gle/qg5nWTusJaMdFLGJ7" target="_blank" class="button">📝 แบบฝึกหัดท้ายบท</a>
+    
+    </div>
+  </div>
+
+  <footer>
+    © 2025 จัดทำโดย นางสาว ศรนรี บุญประกอบ
+  </footer>
+</body>
+</html>
+
+
