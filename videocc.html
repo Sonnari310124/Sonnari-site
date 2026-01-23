@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วิดีโอการเรียนรู้ - OOP</title>
+  <link rel="icon" href="../../OneDrive/เอกสาร/images/SchoolLogo.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(120deg, #e3f2ff, #fff1f8, #f5faff);
+      background-size: 200% 200%;
+      animation: bgMove 10s ease infinite;
+      color: #1d1d1f;
+
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .page-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .glass {
+      margin-top: 60px;
+      width: 90%;
+      max-width: 1100px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(18px);
+      border-radius: 28px;
+      padding: 50px;
+      box-shadow: 0 10px 40px rgba(31,38,135,0.15);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      height: 620px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin-bottom: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      text-decoration: none;
+      background: #0071e3;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background: #005bb5;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page-content">
+  <div class="glass">
+    <h1>🎬 วิดีโอการเรียนรู้ : Object-Oriented Programming</h1>
+
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/videoseries?list=PLltVQYLz1BMCLhBh_3RKlgEq7Cc6fdvOw"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="buttons">
+      <a href="../../OneDrive/เอกสาร/chapter12-content.html" class="button">🏠 ← กลับหน้าบทที่ 12</a>
+      <a href="../../OneDrive/เอกสาร/index.html" class="button">📘 กลับหน้าหลัก</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 จัดทำโดย นางสาว ศรนรี บุญประกอบ
+</footer>
+
+</body>
+</html>
