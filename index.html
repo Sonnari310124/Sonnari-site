@@ -145,11 +145,51 @@
       width: 70%;
       padding: 10px;
     }
+	  /* ===== OOP Moving Banner ===== */
+.oop-banner {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.oop-banner-track {
+  display: flex;
+  width: max-content;
+  animation: bannerMove 30s linear infinite;
+  padding: 10px 0;
+}
+
+.oop-banner-track img {
+  height: 120px;      /* คุมความสูง ไม่กินพื้นที่ */
+  width: auto;
+  margin-right: 40px;
+  border-radius: 18px;
+}
+
+@keyframes bannerMove {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+/* เอาเมาส์ชี้แล้วหยุด (ดูหรู) */
+.oop-banner:hover .oop-banner-track {
+  animation-play-state: paused;
+}
+
   </style>
 </head>
 <body>
   <header class="glass">
     <img src="images\SchoolLogo.png" alt="Logo" class="logo">
+	  <!-- Moving Banner -->
+<div class="oop-banner">
+  <div class="oop-banner-track">
+    <img src="images/Gemini_Generated_Image_cjxkeycjxkeycjxk.png" alt="OOP Banner">
+  </div>
+</div>
+
     <h1>
   สื่อการเรียนรายวิชา การเขียนโปรแกรมเชิงวัตถุเบื้องต้น
   <br>
